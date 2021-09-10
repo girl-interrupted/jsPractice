@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        display: flex;
+        margin: auto;
+        width:1024px;
+        padding:10px;
+        background-color:#d8a3a3;
+        font-size:14px;
+        font-family:Verdana;
+    }
+    button {
+        margin: auto;
+        background-color: darkcyan;
+        border: none;
+        width: 100px;
+        height: 100px;
+    }
+    </style>
+</head>
+<body>
+    <button onclick="requestNumbers(); addNumbers(num1, num2);">Add numbers</button>
+    <button onclick="requestNumbers(); subtractNumbers(num1, num2);">Subtract numbers</button>
+    <button onclick="requestNumbers(); divideNumbers(num1, num2);">Divide numbers</button>
+    <button onclick="requestNumbers(); multiplyNumbers(num1, num2);">Multiply numbers</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
