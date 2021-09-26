@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='style15.css'>
+</head>
+
+<body>
+<div class="body-container">
+    <form class="form-container">
+        <h1>Sign up to use our platform</h1>
+
+        <label for="first-name"><b>Your first name</b></label>
+        <input type="text" placeholder="First name*" id="first-name" class="input-field">
+        <p id="errorFirstName" class="errorMessage"></p>
+
+        <label for="last-name"><b>Your last name</b></label>
+        <input type="text" placeholder="Last name*" id="last-name" class="input-field">
+        <p id="errorLastName" class="errorMessage"></p>
+
+        <label for="phone-number"><b>Phone number</b></label>
+        <input type="number" placeholder="Phone number with country code*" id="phone-number" class="input-field">
+        <p id="errorPhoneNumber" class="errorMessage"></p>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter email*" id="email" class="input-field">
+        <p id="errorEmail" class="errorMessage"></p>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter password*" id="password" class="input-field">
+        <p id="errorPassword" class="errorMessage"></p>
+
+        <label for="confirm-password"><b>Confirm password</b></label>
+        <input type="password" placeholder="Confirm password*" id="confirm-password" class="input-field">
+        <p id="errorConfirmPassword" class="errorMessage"></p>
+
+        <p>Would you like to receive our weekly updates?</p>
+            <div class="updates-radio-container">
+                <input type="radio" id="radio-yes" name="update-radio" value="yes">
+                <label for="radio-yes">Sure!</label><br>
+
+                <input type="radio" id="radio-no" name="update-radio" value="no">
+                <label for="radio-no">No, thanks</label><br>
+                <p id="errorUpdates" class="errorMessage"></p>
+            </div>
+        <p id="success"></p>
+        <div class="button-container">
+            <button type="submit" class="btn-signup" onclick="checkInputsValue()">Sign up now</button>
+        </div>
+    </form>
+</div>
+<script src="script15-2.js"></script>
+</body>
+</html>

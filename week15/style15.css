@@ -1,0 +1,35 @@
+    .body-container {
+        display: flex;
+        justify-content: center;
+        font-family: 'Nunito', sans-serif;
+        color: #384047;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 80%;
+        padding-left: 20px;
+        background: #f4f7f8;
+        border-radius: 8px;
+    }
+    .input-field {
+        margin: 10px;
+        width: 65%;
+        height: 5%;
+        border: 1px solid rgb(179, 172, 172);
+        border-radius: 7px;
+    }
+    .updates-radio-container {
+        display: flex;
+    }
+    .btn-signup {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 20px;
+        border: none;
+    }
+    .errorMessage {
+        color: red;
+    }
