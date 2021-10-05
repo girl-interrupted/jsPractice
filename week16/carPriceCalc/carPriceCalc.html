@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' href='carPriceCalc.css'>
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="carPriceCalc.css">
+    <title>Find out the value of your car</title>
 </head>
 <body>
+    <div id="main-container">
+        <h1 class="header">Find out the value of your car today</h1>
+        <section class="section-container">
+            <h2>Select the brand of your car: </h2>
+            <select id="carBrand" class="userChoice">
+                <option value="0">select</option>
+                <option value="500">Mercedes</option>
+                <option value="400">Mini Cooper</option>
+                <option value="500">BMW</option>
+                <option value="300">Volvo</option>
+            </select>
+        </section>
+
+        <section class="section-container">
+            <h2>Select a year: </h2>
+            <select id="carYear" class="userChoice">
+                <option value="600">2015 or later</option>
+                <option value="500">2010-2014</option>
+                <option value="400">2005-2009</option>
+                <option value="300">2000-2004</option>
+                <option value="200">1995-1999</option>
+                <option value="100">1994 or before</option>
+            </select>
+        </section>
+
+        <section class="section-container">
+            <h2>Fuel type: </h2>
+                <input type="radio" id="fuel1" class="userChoice" name="fueltype" value="200">
+                <label for="fueltype">Petrol</label><br>
+
+                <input type="radio" id="fuel2" class="userChoice" name="fueltype" value="200">
+                <label for="fueltype">Diesel</label><br>
+
+                <input type="radio" id="fuel3" class="userChoice" name="fueltype" value="250">
+                <label for="fueltype">Gas</label><br>
+        </section>
+
+        <section class="section-container">
+            <h2>Transmission type: </h2>
+            <p>automatic<input type="radio" class="userChoice" name="transmission" value="300"></p>
+            <p>manual<input type="radio" class="userChoice" name="transmission" value="200"></p>
+        </section>
+
+        <section class="section-container">
+            <h2>Air conditioning</h2>
+                <input type="checkbox" class="userChoice" name="aircon" value="300">
+        </section>
+
+        <section class="section-container">
+            <h2>Mileage: </h2>
+                <input type="number" id="mileage" name="mileage" class="userChoice"> miles<br>
+        </section>
+
+        <button id="btn" type="button" onclick="checkValue()">Show me the value</button>
+        <p id="value"></p>
+    </div>
     <script src="carPriceCalc.js"></script>
 </body>
 </html>
