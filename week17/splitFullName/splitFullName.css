@@ -1,0 +1,30 @@
+.body-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 3vw;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Nunito', sans-serif;
+}
+
+.userInputContainer {
+    display: flex;
+}
+
+.inputStyle {
+    width: 40vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+}
+
+button {
+    width: 15vw;
+    margin: 1vw;
+
+    border: none;
+    background-color: lightblue;
+
+    font-family: 'Nunito', sans-serif;
+}
