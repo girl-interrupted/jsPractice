@@ -9,9 +9,28 @@ function transformName() {
         userInputArray[position] = name[0].toUpperCase() + name.slice(1);
     })
 
-    document.getElementById('firstName').value = userInputArray[0];
-    document.getElementById('lastName').value = userInputArray[1];
-    document.getElementById('patronymic').value = userInputArray[2];
+    let outputFirstName = userInputArray[0];
+    let outputLastName = userInputArray[1];
+    let outputPatronymic = userInputArray[2];
+
+    if (!outputFirstName) {
+        document.getElementById('promptFirstName').innerHTML = "Please enter your first name";
+    } else {
+        document.getElementById('firstName').value = outputFirstName;
+    }
+
+    if (!outputLastName) {
+        document.getElementById('promptLastName').innerHTML = "Please enter your last name";
+    } else {
+        document.getElementById('lastName').value = outputLastName;
+    }
+
+    if (!outputPatronymic) {
+        document.getElementById('promptLastName').innerHTML = "Please enter your patronymic";
+    } else {
+        document.getElementById('patronymic').value = outputPatronymic;
+
+    }
 }
 
 function clearResultFields() {
